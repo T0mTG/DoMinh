@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background: #161616;
+  font-family: "Montserrat", sans-serif;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.mainLogo{
+  width: 32%;
+  height: 32%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 90px;
+}
+
+.mainText {
+  color: #fdfbf3;
+  font-weight: 100;
+  margin: auto;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 16px;
+  opacity: 70%;
+  
+}
+
+.dBut {
+  background-color: #161616;
+  border: 2px solid #f9e9ae;
+  border-radius: 25px;
+  color: #fdfbf3;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  padding: 11px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+}
+@keyframes color-change {
+  from{
+    background-color: #161616;
+  }
+  to{
+    background-color: #f9e9ae;
+  }
+}
+.dBut:hover{
+  animation: color-change ease-in 0.2s;
+  color: #161616;
+  background-color: #f9e9ae
+
+}
+
+.textBox{
+  max-width: 100%;
+  overflow-x: hidden;
+  color: #fdfbf3;
+  width: 850px;
+  height: 480px;
+  display: block;
+  margin-left: 330px;
+  margin-right: auto;
+  margin-top: 50px;
+  background-color: #161616;
+  border: 2px solid #f9e9ae;
+  white-space: pre-wrap;
+  overflow-y: scroll;
+  display: inline-block;
+}
+
+.contentText{
+  width: 850px;
+  height: 480px;
+  color: #fdfbf3;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.hilight {
+  background-color: #e4d9ae;
+  color: #161616;
+}
+
+a:link {
+  color: #161616;
+}
+
+a:visited {
+  color: #161616;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: auto;
+}
+
+.btn{
+  border: none;
+  background-color: inherit;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  display: inline-block;
+  background-color: #e4d9ae;
+  color: #161616;
+}
+
+.popup .overlay{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+  display: none;
+}
+
+.popup .content{
+  position: absolute;
+  margin:auto;
+  padding-top: 20px ;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%) scale(0);
+  background: #161616;
+  border: 2px solid #f9e9ae;
+  border-radius: 20px 20px;
+  width: 850px;
+  height: 240px;
+  z-index: 2;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.popup .close-btn{
+  cursor: pointer;
+  position: absolute;
+  right: 11px;
+  top: 11px;
+  width: 40px;
+  height: 40px;
+  background: #161616;
+  border: 2px solid #f9e9ae;
+  border-radius: 9px 9px;
+  display: inline-block;
+  text-align: center;
+  font-size: 35px;
+  margin-top: auto;
+  color: #f9e9ae;
+  line-height: 38px;
+}
+
+.popup.active .overlay{
+  display: block;
+}
+
+.popup.active .content{
+  transition: all 300ms ease-in-out;
+  transform: translate(-50% , -50%) scale(1);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	width:100px;
+    color:black;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f9e9ae; 
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fdfbf3; 
+}
